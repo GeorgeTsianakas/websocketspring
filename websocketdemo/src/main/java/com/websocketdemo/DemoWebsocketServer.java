@@ -9,5 +9,5 @@ public class DemoWebsocketServer {
     public static void main(String[] args) {
         SpringApplication.run(DemoWebsocketServer.class, args);
     }
-    
+
 }

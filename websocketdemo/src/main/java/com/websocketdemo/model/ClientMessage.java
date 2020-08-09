@@ -1,6 +1,7 @@
 package com.websocketdemo.model;
 
 //import lombok.AllArgsConstructor;
+
 import lombok.Data;
 
 @Data

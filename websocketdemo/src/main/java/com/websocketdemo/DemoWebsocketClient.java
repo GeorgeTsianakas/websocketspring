@@ -11,6 +11,7 @@ import org.springframework.web.socket.messaging.WebSocketStompClient;
 import org.springframework.web.socket.sockjs.client.SockJsClient;
 import org.springframework.web.socket.sockjs.client.Transport;
 import org.springframework.web.socket.sockjs.client.WebSocketTransport;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.lang.reflect.Type;
@@ -91,7 +92,7 @@ public class DemoWebsocketClient {
         StompSessionHandler sessionHandler = new MyStompSessionHandler(name);
         StompSession session = stompClient.connect(url, sessionHandler).get();
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        for (;;) {
+        for (; ; ) {
             System.out.print(name + " >> ");
             System.out.flush();
             String line = in.readLine();
